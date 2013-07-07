@@ -8,7 +8,8 @@ import lxml.html
 import houses
 
 
-def test_extract_year():
+def test_parse_row():
+    'An individual row should be parsed correctly.'
     mainrow = lxml.html.fromstring('''
                         <tr class=pplevenrow>
                             <td align="left" width="3%">&nbsp;</td>

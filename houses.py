@@ -42,8 +42,18 @@ def search(apn):
     f.write(r.text)
     f.close()
 
+TAX_KEYS = [None, 'tax-type', 'bill-year', 'tracer', 'total-amount', None]
+INSTALLMENT_KEYS = [None, 'installment', 'due-date', None, 'installment-amount', 'status', 'status-date']
 def _parse_row(mainrow, installments):
-    pass
+    row = dict(zip(TAX_KEYS, mainrow.xpath('td/text()')))
+    del row[None]
+    row["total-amount"] = float(row["total-amount"].replace('$', '').replace(',', ''))
+    row["installments"] = []
+    for installment in installments:
+        subrow = dict(zip(INSTALLMENT_KEYS, installment.xpath('td/text()')))
+        del subrow[None]
+        row['installments'].append(subrow)
+    return row
 
 def parse(filename):
     # filename = open(os.path.join('results', apn), 'r')
@@ -56,6 +66,7 @@ def parse(filename):
 
     information = []
     table = html.xpath('id("pplresultcontent4")')[0]
+    # keys = [k.replace(' ', '-').lower() for k in mainrow.xpath('td[position()>1 and position() < last()]/text()')]
     table.xpath('tr[position()=1]/td[position()>1 and position() < last()]/text()')
     for tr in table.xpath('tr[position()>1)'):
         for td in tr.xpath('td'):
