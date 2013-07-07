@@ -74,7 +74,9 @@ def test_parse_row():
         }
       ]
     }
-    n.assert_equal(observed, expected)
+    n.assert_dict_equal(observed['installments'][0], expected['installments'][0])
+    n.assert_list_equal(observed['installments'], expected['installments'])
+    n.assert_dict_equal(observed, expected)
 
 def check_parse(apn):
     observed = houses.parse(os.path.join('fixtures', apn, 'input'))
