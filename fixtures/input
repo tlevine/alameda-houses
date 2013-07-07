@@ -1,0 +1,477 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+
+
+<html>
+<HEAD>
+
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<META name="GENERATOR" content="IBM Software Development Platform">
+<META http-equiv="Content-Style-Type" content="text/css">
+
+
+<!-- Contains script to:  Resize window in Netscape; Identify browser version; Run search; Run department list-->
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript" src="/ssi/countypage.js"></SCRIPT>
+
+<!-- Standard stylesheet link for all county pages;-->
+<link type="text/css" rel="STYLESHEET" href="/ssi/onlineServices.css">
+<!-- Stylesheet for property tax html pages, also used by PropTaxPublic application;-->
+<link type="text/css" rel="STYLESHEET" href="/propertytax/proptaxpublic.css">
+<!-- PropTaxPublic application specific stylesheet;-->
+<LINK href="/ptax_pub_app/theme/master.css" rel="stylesheet" type="text/css">
+
+
+<TITLE>Search Secured Supplemental Property Taxes</TITLE>
+</HEAD>
+
+<body bgcolor="#FFFFFF" TOPMARGIN=0 LEFTMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0 onLoad="window.focus()">
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+  			<td colspan="2">
+
+<html>		
+	<head>
+	
+	
+	</head>
+	<body>
+	<TABLE height=26 cellSpacing=0 cellPadding=0 width="100%" border=0>
+		<TR>
+			<td>
+			<!-- ========================================================================================= -->
+			<!-- Alameda County Header-->
+			<div id="newacgovheader" style="width: 100%;background-color: #8fadca;background-image: url(/images/banner/deptheaderbg.jpg);text-align: left;min-width: 970px;border-bottom: 1px solid #333;"><ul id="acgovheadermenu" style="display:none;"><li class="acquick"></li></ul>
+	<div style="float: right;padding:0px;margin:0px;height:52px;width:411px;text-align:right;"><a href="#mainsite" style="color:#FFF;font-size: 70%;padding: 10px;">Skip County Header</a></div>
+	<div ><a href="http://www.acgov.org/index.htm"><img style="margin: 3px;" src="/images/banner/newacgovlogo.png" alt="Alameda County, CA, acgov.org" width="180" height="44" /></a></div>
+  	<div style="position: absolute;padding: 0px;margin: 0px;z-index: 5;height: 24px;width: 110px;top: 15px;left: 250px;">
+    	<a href="http://www.acgov.org/government/quicklinks.htm"><img src="/images/banner/quickbutton3.png" width="110" height="24" alt="ACGOV Quick Links" /></a>
+    </div>
+	<div style="position: absolute;padding: 0px;margin: 0px;z-index: 5;height: 20px;width: 110px;top: 15px;left: 380px;">
+    	<a href="http://acsearch.acgov.org/search?btnG=GO&site=my_collection&client=my_collection&proxystylesheet=my_collection&output=xml_no_dtd"><img src="/images/banner/searchbutton3.png" width="110" height="24" alt="Goto ACGOV Search" /></a>
+    </div>
+	<div style="clear:both;padding:0px;margin:0px;"></div>
+</div>	
+<div id="mainsite" style="clear: both;padding-top: 0px;">
+			<!-- ========================================================================================= -->
+			</td>
+		</TR>
+	</TABLE>
+	
+	</body>
+</html>
+
+</td>
+		</tr>
+		
+	</table>
+
+
+
+<div id="taxbodysection">
+
+
+	
+		<div id="rl"><a class="ttc" href="/treasurer/">Treasurer-Tax Collector</a> | <a class="bl" href="/business/buslic.htm">Business License</a></div>
+	
+	<div id="taxbanner">
+				<img class="topleft" src="/propertytax/images/title_top_left.gif" alt="" />
+				<p class="maintitle">Property Taxes</p>
+				<img class="topright" src="/propertytax/images/title_top_right.gif" alt="" />
+	</div>
+	
+		<div id="taxsidebar">
+			
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+
+<html>
+<HEAD>
+
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<META name="GENERATOR" content="IBM Software Development Platform">
+<META http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css">
+
+
+
+
+	
+ 
+			#taxsidebar ul li a.lookup {
+				background-color:#cbdbed;
+				color: #003366;
+				font-weight:bold;
+			}
+			#taxsidebar ul li a.lookup:hover {
+				padding-left: 5px;
+			} 
+ 
+</style>
+</HEAD>
+
+
+
+
+	
+			<!-- ========================================================================================= -->
+			<!-- Property Tax Public Sidebar-->
+			<!-- <img class="topleft" src="/propertytax/images/sidebar_top_left.gif" alt="" /> -->
+<ul><li><a class="lookup" href="/propertytax/index.htm">Account Lookup</a></li><li><a class="online" href="/propertytax/online.htm">Pay Online</a></li><li><a class="phone" href="/propertytax/phone.htm">Pay By Phone</a></li><li><a class="mail" href="/propertytax/mail.htm">Pay By Mail</a></li><li><a class="inperson" href="/propertytax/inperson.htm">Pay in Person</a></li><li><a class="history" href="/propertytax/history.htm">Tax History Lookup</a></li><li><a class="fee" href="/propertytax/fee.htm">Convenience Fee</a></li><li><a class="checks" href="/propertytax/checks.htm">Returned Checks</a></li><li><a class="email" href="/propertytax/email.htm">E-mail Reminder</a></li><li><a class="wire" href="/propertytax/wire.htm">Wire Transfer</a></li><li><a class="appforms" href="/propertytax/forms.htm">Application Forms</a></li><!-- <li><a class="section">Related Links</a></li><li><a class="ttc" href="/treasurer/">Treasurer-Tax Collector</a></li><li><a class="bl" href="/buslic.htm">Business License</a></li> --></ul>
+<!-- <img class="bottomleft" src="/propertytax/images/sidebar_bottom_left.gif" alt="" /> -->
+ 
+			<!-- ========================================================================================= -->
+		
+
+
+<!-- <BODY>
+<table>
+<tr>
+  <td>
+    <h2>Menu</h2>
+  </td>
+</tr>
+<tr>
+  <td width="20%" valign="top">
+    <a href="">Pay Online</a>
+  </td>
+</tr>
+<tr>
+  <td width="20%" valign="top">
+    <a href="">Search Taxes</a>
+  </td>
+</tr>
+<tr>
+  <td width="20%" valign="top">
+    <a href="">Search History</a>
+  </td>
+</tr>
+</table>
+</BODY> -->
+</html>
+
+		</div>
+	
+	
+		<div id="taxmain">
+		<div id="taxcontent">
+		<!-- <div id="taxcontent"> -->
+			<img class="topright" src="/propertytax/images/main_top_right.gif" alt="" />
+			<img class="bottomleft" src="/propertytax/images/main_bottom_left.gif" alt="" />
+			<img class="bottomright" src="/propertytax/images/main_bottom_right.gif" alt="" />
+			
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+
+
+<html>
+<HEAD>
+
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<META name="GENERATOR" content="IBM Software Development Platform">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE></TITLE>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+
+	function clearSearchForm()  {
+		document.getElementById("displayApn").value='';
+		document.getElementById("situsStreetNumber").value='';
+		document.getElementById("situsStreetName").value='';
+		document.getElementById("situsStreetSuffix").value='';
+		document.getElementById("situsUnitNumber").value='';
+		document.getElementById("situsCity").value='';
+		document.getElementById("displayApn").focus();
+	}
+	
+//-->
+</script>
+
+</HEAD>
+
+<BODY>
+
+
+
+<!-- ********************************************************************************************** -->
+<!-- *                                        BEAN DEFINITION                                     * -->
+<!-- ********************************************************************************************** -->
+
+<!-- Get size of current bills array and set boolean -->
+
+	
+
+
+
+
+	
+
+
+<!-- Get size of prior (history) bills array and set boolean -->
+
+
+	
+
+
+
+
+
+<!-- ********************************************************************************************** -->
+<!-- *                                     SCREEN TITLE AND ERROR MESSAGES                        * -->
+<!-- ********************************************************************************************** -->
+
+<form name="RealSearchForm" method="post" action="/ptax_pub_app/RealSearch.do">
+
+
+<table width="100%" align="center" cellspacing="0" border="0">
+  	<tr>
+  	  	<td align="right" colspan="3">&nbsp;</td>
+  	</tr>
+	<tr class="pplscreentitle">
+  		<td align="left" width="10%">&nbsp;</td>	
+  	  	<td align="center" width="80%">Search Secured and Supplemental Property Taxes</td>
+  	  	<td align="left" width="10%">&nbsp;</td>
+  	</tr>
+  	<tr class="pplscreensubtitle">
+  	  	<td align="left">&nbsp;</td>	
+  	  	<td align="center">Secured tax bills are payable online from 10/5/2012 to 6/30/2013.</td>
+  	  	<td align="left">&nbsp;</td>
+  	</tr>
+  	<tr class="pplscreensubtitle">
+  	  	<td align="left">&nbsp;</td>	
+  	  	<td align="center">Most supplemental tax bills are payable online to 6/30/2013.</td>
+  	  	<td align="left">&nbsp;</td>
+  	</tr>
+</table>
+
+			<!-- Show Struts Error Messages if they Exist -->
+<table border="0" cellpadding="0" align="center" cellspacing="0" width="95%">
+	<tr align="center"><td class="pplerrortext"><br></td></tr>
+</table>
+
+
+             <!-- Show "No Bills Found" Message if no Results Returned -->
+ 
+	
+
+
+
+
+<!-- ********************************************************************************************** -->
+<!-- *                    BEGINNING OF ACCOUNT ENTRY FORM - PARCEL NUMBER ENTRY BOX               * -->
+<!-- ********************************************************************************************** -->
+
+
+
+
+<!-- ********************************************************************************************** -->
+<!-- *                    END OF ACCOUNT ENTRY FORM - BEGINNING OF RESULTS                        * -->
+<!-- ********************************************************************************************** -->
+
+
+<!--       Display the parcel and property address if EITHER current or prior bills found       -->
+
+	<table id="pplresulttable3" width="90%" align="center">
+  		<tr>
+    		<td>
+      			<table id="pplresultcontent3" width="100%" align="center" cellspacing="0">
+        			<tr class="pplresultheader">
+          				<td align="left" width="25%">Property Summary</td>
+          				<td align="center" width="25%">&nbsp;</td>
+          				<td align="center" width="25%">&nbsp;</td>
+          				<td align="center" width="25%">
+          					<input type="submit" name="newBillSearch" value="New Search" class="btcommon">
+       					</td>
+        			</tr>
+        			<tr>
+          				<td align="right" class="pplresultlabel" width="25%">APN:&nbsp;</td>
+          				<td align="left" class="pplresultdata">&nbsp;507-215-1</td>
+          				<td align="center" class="pplresultdata">&nbsp;</td>
+          				<td align="center" class="pplresultdata">&nbsp;</td>
+        			</tr>
+        			<tr>
+          				<td align="right" class="pplresultlabel">Property Address:&nbsp;</td>
+          				<td colspan="2" class="pplresultdata" align="left">&nbsp;255 HILLVIEW DR, FREMONT 94536</td>
+          				<td align="center" class="pplresultdata">&nbsp;</td>
+        			</tr>
+       			</table>
+    		</td>    
+  		</tr>
+  	</table>
+
+ 
+
+	<table width="100%" align="center" cellspacing="0" border="0">
+		
+		<tr>
+  			<td>&nbsp;</td>
+  		</tr>
+		<tr>
+  	  		<td align="center" class="pplstandardlinks">
+  	  			
+	  	  			<a href="http://www.acgov.org/MS/prop/index.aspx?PRINT_PARCEL=507-215-1">Property Assessment Information</a>
+  	  			
+  	  		</td>
+  		</tr>
+  		<tr>
+  			<td>&nbsp;</td>
+  		</tr>
+  	</table>
+
+
+
+<!-- ********************************************************************************************** -->
+<!-- *                             DISPLAY CURRENT BILL RESULTS                                   * -->
+<!-- ********************************************************************************************** -->
+
+
+	<table id="pplresulttable4" width="90%" align="center">
+  		<tr>
+    		<td>
+      			<table width="100%" align="center" cellspacing="0">
+        			<tr class="pplresultheader">
+          				<td align="left" width="40%">Current Year Tax Information</td>
+          				<td align="center" width="10%">&nbsp;</td>
+          				<td align="center" width="25%">&nbsp;</td>
+          				<td align="center" width="25%">&nbsp;</td>
+        			</tr>
+       			</table>
+    		</td>    
+  		</tr>
+  		<tr>
+    		<td>
+      			<table id="pplresultcontent4" width="100%" cellspacing="0" border="0">
+					
+					<tr class="pplresultlabel">
+          				<td align="left" width="3%">&nbsp;</td>
+          				<td align="left" width="24%">Tax Type</td>
+          				<td align="left" width="15%">Bill Year</td>
+          				<td align="left" width="15%">Tracer</td>
+          				<td align="left" width="15%">Total Amount</td>
+          				<td align="center" width="25%">Options</td>
+          				<td align="left" width="3%">&nbsp;</td>
+        			</tr>
+        			<tr class="pplresultlabel">
+          				<td align="left" width="3%">&nbsp;</td>
+          				<td align="center" width="24%">Installment</td>
+          				<td align="right" width="15%">Due Date&nbsp;&nbsp;</td>
+          				<td align="left" width="15%">&nbsp;</td>
+          				<td align="right" width="15%">Installment Amount</td>
+          				<td align="center" width="25%">Status/Status Date</td>
+          				<td align="left" width="3%" >&nbsp;</td>
+        			</tr>
+        			
+        			
+         				
+         				<tr class="pplbilldivider"><td colspan="7"></td></tr>
+         				<tr class=pplevenrow>
+       	  					<td align="left" width="3%">&nbsp;</td>
+          					<td align="left" width="24%">Secured</td>
+          					<td align="left" width="15%">2012-2013</td>
+          					<td align="left" width="15%">36178700</td>
+          					<td align="left" width="15%">$5,837.64</td>
+		  					<td align="left" width="25%">&nbsp;
+		  						
+			  						<a href="/ptax_pub_app/PublicDownload.do?getStreamInfo=true&amp;pubCurrRollYear=2012&amp;pubBillType=SEC&amp;pubBillId=36178700" tabindex="3" class="pplviewbill">View Bill</a>
+    		    	  			
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								
+							</td>
+          					<td align="left" width="3%">&nbsp;</td>
+        				</tr>
+        				<tr class=pplevenrow>
+       	  					<td align="left" width="3%">&nbsp;</td>
+          					<td align="center" width="24%">1st Installment</td>
+          					<td align="right" width="15%">12/10/2012&nbsp;&nbsp;</td>
+          					<td align="left" width="15%">&nbsp;</td>
+          					<td align="right" width="15%">$2,918.82</td>
+		  					<td align="right" width="28%" colspan="2">Paid Nov 5, 2012&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						</tr>
+						
+        				<tr class=pplevenrow>
+	      					<td align="left" width="3%">&nbsp;</td>
+       	  					<td align="center" width="24%">2nd Installment</td>
+          					<td align="right" width="15%">04/10/2013&nbsp;&nbsp;</td>
+          					<td align="left" width="15%">&nbsp;</td>
+          					<td align="right" width="15%">$2,918.82</td>
+		  					<td align="right" width="28%" colspan="2">Paid Mar 8, 2013&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						</tr>
+						
+						
+						<tr class="pplbilldivider"><td colspan="7"></td></tr>
+        				
+        			
+	    		</table>
+	      	</td>
+      	</tr>
+    </table>
+    <br>&nbsp;
+  
+
+
+<!-- ********************************************************************************************** -->
+<!-- *                                      DISPLAY TAX HISTORY                                   * -->
+<!-- ********************************************************************************************** -->
+
+  
+
+
+</form>
+<script type="text/javascript" language="JavaScript">
+  <!--
+  var focusControl = document.forms["RealSearchForm"].elements["displayApn"];
+
+  if (focusControl != null && focusControl.type != "hidden" && !focusControl.disabled && focusControl.style.display != "none") {
+     focusControl.focus();
+  }
+  // -->
+</script>
+
+
+
+
+</BODY>
+</html>
+
+		<!-- </div> -->
+		</div>
+		</div>
+</div>
+
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		
+		<tr>
+  			<td colspan="2">
+
+<html>	
+
+	<body>
+	<div align="center" style="clear:both;">
+<br>
+<!-- ========================================================================================= -->
+<!-- Alameda County Footer-->
+</div>
+<div id="newacgovfooter" style="width: 100%;text-align: center;float: left;font-size: 70%;font-weight: normal;font-style: normal;padding: 0px;margin: 10px;">
+	<p style="padding:0px;margin:0px;display:inline;"><img style="vertical-align:middle;padding: 0px 5px;" src="/images/banner/footerlogo.png" width="22" height="22" alt="Alameda County seal" />Alameda County &copy; 2012 &bull; All Rights Reserved &bull; <a href="http://www.acgov.org/government/legal.htm">Legal / Disclaimers</a> &bull; <a href="http://www.acgov.org/government/accessibility.htm">Accessibility</a></p>
+</div>
+<!-- ========================================================================================= -->
+</div>
+
+
+
+	</body>
+</html>
+
+</td>
+		</tr>
+	</table>
+
+</BODY>
+</html>
