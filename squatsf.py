@@ -42,10 +42,9 @@ def search(apn):
     f.write(r.text)
     f.close()
 
-def parse(apn):
-    f = open(os.path.join('results', apn), 'r')
-    html = lxml.html.parse(f)
-    f.close()
+def parse(filename):
+    # filename = open(os.path.join('results', apn), 'r')
+    html = lxml.html.parse(filename)
 
     html.xpath('id("pplresultcontent3")/tr[position()=3]/td[position()>1]/text()')
     texts = html.xpath('id("pplresultcontent3")/tr[position()=3]/td[position()>1]/text()')
