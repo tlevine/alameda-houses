@@ -1,15 +1,12 @@
+import os
 from collections import OrderedDict
-
-from lxml.html import fromstring
 
 from requests import Session
 from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.poolmanager import PoolManager
 import ssl
 
-from dumptruck import DumpTruck
-
-dt = DumpTruck('squatsf.db')
+import lxml.html
 
 class HTTPSAdapter(HTTPAdapter):
     def init_poolmanager(self, connections, maxsize):
@@ -36,10 +33,22 @@ def search(apn):
     }
     s.get('https://www.acgov.org/ptax_pub_app/RealSearchInit.do?showSearchParmsFromLookup=true', headers = headers)
     r = s.post(url, data = data)
-    dt.upsert(OrderedDict([('apn', apn), ('html', r.text)]), 'squatsf')
-    dt.create_index(['apn'], 'squatsf', if_not_exists = True, unique = True)
+    try:
+        os.mkdir('results')
+    except OSError:
+        pass
+
+    f = open(os.path.join('results', apn), 'w')
+    f.write(r.text)
+    f.close()
 
 def parse(apn):
-    dt.execute("SELECT 'html'
-    html = fromstring(r.text)
+    f = open(os.path.join('results', apn), 'r')
+    html = lxml.html.parse(f)
+    f.close()
+
+    html.xpath('id("pplresultcontent3")/tr[position()=3]/td[position()>1]/text()')
+    texts = html.xpath('id("pplresultcontent3")/tr[position()=3]/td[position()>1]/text()')
+    property_address = '\n'.join(filter(None, [line.strip() for line in texts]))
+
     return html
