@@ -1,5 +1,6 @@
 It looks like this is a list with parcel identifiers.
 https://data.acgov.org/Government/Alameda-County-Parcel-Boundaries/2m43-xsic?
+http://www.acgov.org/government/geospatial.htm
 
 > Unpaid taxes are just that: a record of an outstanding amount. I used this
 > web page to look up property tax history on parcels:
