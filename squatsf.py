@@ -48,6 +48,12 @@ def parse(filename):
 
     html.xpath('id("pplresultcontent3")/tr[position()=3]/td[position()>1]/text()')
     texts = html.xpath('id("pplresultcontent3")/tr[position()=3]/td[position()>1]/text()')
-    property_address = '\n'.join(filter(None, [line.strip() for line in texts]))
 
-    return html
+    information =
+
+
+    return {
+        "apn": html.xpath('id("pplresultcontent3")/tr[position()=2]/td[position()=2]/text()')[0].strip(),
+        "property-address": '\n'.join(filter(None, [line.strip() for line in texts])),
+        "information": information,
+    }
