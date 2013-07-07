@@ -21,29 +21,29 @@
           "installment-amount": 2918.82,
           "status": "Paid",
           "status-date": "2013-03-08"
-        }
-      ]
-    }
-    {
+        },
+            {
       "tax-type": "Secured",
       "bill-year": "2011-2012",
       "tracer": "36142200",
-      "total-amount": 5750.46,
+      "total-amount": 5,750.46,
       "installments": [
         {
-          "installment": "",
-          "due-date": "",
-          "installment-amount": "",
-          "status": "",
-          "status-date": "2012-11-05"
-        "",
+          "installment": 1,
+          "due-date": "2011-12-10",
+          "installment-amount": 2,875.23,
+          "status": "Paid",
+          "status-date": "2011-11-10"
+        },
         {
-          "installment": "",
-          "due-date": "",
-          "installment-amount": "",
-          "status": "",
-          "status-date": "2013-03-08"
+          "installment": 2,
+          "due-date": "2012-04-10",
+          "installment-amount": 2,875.23,
+          "status": "Paid",
+          "status-date": "2012-03-12"
         }
+      ]
+    }
       ]
     }
   ]
