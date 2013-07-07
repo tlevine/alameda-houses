@@ -1,4 +1,4 @@
-import os
+import os, datetime
 from collections import OrderedDict
 
 from requests import Session
@@ -42,16 +42,35 @@ def search(apn):
     f.write(r.text)
     f.close()
 
+def _money(raw):
+    return float(raw.replace('$', '').replace(',', ''))
+
 TAX_KEYS = [None, 'tax-type', 'bill-year', 'tracer', 'total-amount', None]
-INSTALLMENT_KEYS = [None, 'installment', 'due-date', None, 'installment-amount', 'status', 'status-date']
+INSTALLMENT_KEYS = [None, 'installment', 'due-date', None, 'installment-amount', 'status/status-date']
 def _parse_row(mainrow, installments):
     row = dict(zip(TAX_KEYS, mainrow.xpath('td/text()')))
-    del row[None]
-    row["total-amount"] = float(row["total-amount"].replace('$', '').replace(',', ''))
+
+    row["total-amount"] = _money(row["total-amount"])
     row["installments"] = []
+
+    del row[None]
+
     for installment in installments:
         subrow = dict(zip(INSTALLMENT_KEYS, installment.xpath('td/text()')))
+
+        subrow['due-date'] = datetime.datetime.strptime(
+            subrow['due-date'].strip(), '%m/%d/%Y').date().isoformat()
+
+        subrow['status'] = subrow['status/status-date'].split(' ')[0]
+        subrow['status-date'] = datetime.datetime.strptime(
+            subrow['status/status-date'].strip(),
+            subrow['status'] + ' %b %d, %Y').date().isoformat()
+
+        subrow['installment'] = int(filter(lambda char: char in '1234567890', subrow['installment']))
+        subrow['installment-amount'] = _money(subrow['installment-amount'])
+
         del subrow[None]
+        del subrow['status/status-date']
         row['installments'].append(subrow)
     return row
 
