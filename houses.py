@@ -42,6 +42,9 @@ def search(apn):
     f.write(r.text)
     f.close()
 
+def _parse_row(mainrow, installments):
+    pass
+
 def parse(filename):
     # filename = open(os.path.join('results', apn), 'r')
     html = lxml.html.parse(filename)
@@ -49,7 +52,14 @@ def parse(filename):
     html.xpath('id("pplresultcontent3")/tr[position()=3]/td[position()>1]/text()')
     texts = html.xpath('id("pplresultcontent3")/tr[position()=3]/td[position()>1]/text()')
 
-    information =
+
+
+    information = []
+    table = html.xpath('id("pplresultcontent4")')[0]
+    table.xpath('tr[position()=1]/td[position()>1 and position() < last()]/text()')
+    for tr in table.xpath('tr[position()>1)'):
+        for td in tr.xpath('td'):
+            pass
 
 
     return {
