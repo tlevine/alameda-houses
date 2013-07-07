@@ -83,7 +83,6 @@ def check_parse(apn):
     expected = json.load(open(os.path.join('fixtures', apn, 'output')))
     n.assert_equal(observed, expected)
 
-@n.nottest
 def test_parse():
     for apn in os.listdir('fixtures'):
         yield check_parse, apn

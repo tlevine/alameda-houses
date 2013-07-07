@@ -85,6 +85,7 @@ def parse(filename):
 
     information = []
     table = html.xpath('id("pplresultcontent4")')[0]
+
     for tr in table.xpath('tr'):
         if tr.attrib['class'] == 'pplbilldivider':
             if mainrow != None and installments != []:
@@ -92,10 +93,11 @@ def parse(filename):
 
             mainrow = None
             installments = []
-        elif mainrow == None:
-            mainrow = tr
-        else:
-            installments.append(tr)
+        elif tr.attrib['class'] in {'pploddrow', 'pploddeven'}:
+            if mainrow == None:
+                mainrow = tr
+            else:
+                installments.append(tr)
 
     return {
         "apn": html.xpath('id("pplresultcontent3")/tr[position()=2]/td[position()=2]/text()')[0].strip(),

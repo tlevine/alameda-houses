@@ -22,7 +22,8 @@
           "status": "Paid",
           "status-date": "2013-03-08"
         },
-            {
+    },
+    {
       "tax-type": "Secured",
       "bill-year": "2011-2012",
       "tracer": "36142200",
@@ -42,8 +43,6 @@
           "status": "Paid",
           "status-date": "2012-03-12"
         }
-      ]
-    }
       ]
     }
   ]
